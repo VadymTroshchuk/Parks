@@ -26,4 +26,8 @@ class MainActivity : AppCompatActivity() {
     // Query to sum park visitors in San Francisco
     private val QUERY_SUM_PARK_VISITORS_SF = "SELECT SUM(park_visitors) FROM park WHERE city = 'San Francisco'"
 
+
+    // Query to select the top 5 parks with the highest number of visitors
+    private val QUERY_TOP_5_PARKS = "SELECT name, park_visitors FROM park ORDER BY park_visitors DESC LIMIT 5"
+
 }
