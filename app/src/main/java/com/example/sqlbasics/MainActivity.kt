@@ -18,4 +18,12 @@ class MainActivity : AppCompatActivity() {
     // Query to get parks with visitors less than 1,000,000
     private val QUERY_PARKS_LESS_THAN_MILLION = "SELECT * FROM park WHERE park_visitors < 1000000"
 
+
+    // Query to count distinct cities in the park table
+    private val QUERY_COUNT_DISTINCT_CITIES = "SELECT COUNT(DISTINCT city) FROM park"
+
+
+    // Query to sum park visitors in San Francisco
+    private val QUERY_SUM_PARK_VISITORS_SF = "SELECT SUM(park_visitors) FROM park WHERE city = 'San Francisco'"
+
 }
